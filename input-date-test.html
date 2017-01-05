@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <title>Test if browser supports &lt;input type=&quot;date&quot;</title>
+  </head>
+  <body>
+    <input type="date" id="DateInput">
+    <div id="Message"></div>
+    <script>
+      var support = false;
+      var _input = document.getElementById('DateInput');
+      var _message = document.getElementById('Message');
+
+      try {
+        var testValue = 'test-value';
+        _input.value = testValue;
+        support = (_input.value !== testValue);
+      }
+      catch(e){
+      }
+
+      _message.innerHTML = support ?
+        'type=date is supported' :
+        'type=date not supported';
+    </script>
+  </body>
+</html>
