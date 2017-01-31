@@ -1,0 +1,12 @@
+<html>
+<head>
+<style>
+span {
+font-size: 0;
+}
+</style>
+</head>
+<body>
+<p>Test1 <span>ABC</span> Test2</p>
+</body>
+</html>
