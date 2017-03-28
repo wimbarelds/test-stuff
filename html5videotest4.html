@@ -15,7 +15,7 @@
         <source src="https://archive.org/download/WebmVp8Vorbis/webmvp8.ogv" type="video/ogg" onload="console.log('source3 onload')"  media="(min-width: 120000px)">
       </video>
     <script>
-      document.querySelectorAll('source').forEach((el) => el.remove());
+      document.querySelector('video').remove();
     </script>
   </body>
 </html>
