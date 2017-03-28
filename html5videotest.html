@@ -5,7 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
   </head>
   <body onload="console.log('body onload')">
-      <video class="header__video" autoplay="true" loop="true" poster="//placehold.it/1400x600/999/888" onload="console.log('video onload')">
+      <video class="header__video" autoplay="true" loop="true" poster="//placehold.it/1400x600/999/888"
+             onload="console.log('video onload')"
+             onloadedmetadata="console.log('onloadedmetadata onload')"
+             onloadeddata="console.log('onloadeddata onload')"
+             >
         <source src="https://archive.org/download/WebmVp8Vorbis/webmvp8.webm" type="video/webm" onload="console.log('source1 onload')">
         <source src="https://archive.org/download/WebmVp8Vorbis/webmvp8_512kb.mp4" type="video/mp4" onload="console.log('source2 onload')">
         <source src="https://archive.org/download/WebmVp8Vorbis/webmvp8.ogv" type="video/ogg" onload="console.log('source3 onload')">
